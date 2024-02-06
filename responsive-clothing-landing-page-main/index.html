@@ -1,72 +1,181 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICONS ===============-->
-        
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="">
 
-        <title>Crochê</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    <title>Crochê</title>
+</head>
 
-            <!--==================== NEW ====================-->
-            <section class="new section" id="new">
-                
-            </section>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Shop
+            </a>
 
-            <!--==================== COLLECTION ====================-->
-            <section class="collection section" id="collection">
-                
-            </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-line"></i>
+                            <span>home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>New</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-compass-line"></i>
+                            <span>Collection</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-t-shirt-line"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-            <!--==================== PRODUCTS ====================-->
-            <section class="products section" id="products">
-                
-            </section>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        New Clothing <br>
+                        Collection
+                    </h1>
 
-            <!--==================== BRANDS ====================-->
-            <section class="brand section">
-                
-            </section>
-        </main>
+                    <p class="home__description">
+                        The new collection of clothing from <br>
+                        the best brands this year.
+                    </p>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            
-        </footer>
+                    <a href="#new" class="button__link">
+                        Explore <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
 
-        <!--========== SCROLL UP ==========-->
+                <div class="home__images">
+                    <img src="assets/img/home1.png" alt="Home image">
+                    <img src="assets/img/home2.png" alt="Home image">
+                </div>
+            </div>
+        </section>
 
-        
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <!--==================== NEW ====================-->
+        <section class="new section" id="new">
+            <h2 class="section__title">
+                New Categories
+            </h2>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+            <div class="new__container container grid">
+                <article class="new__card">
+                    <img src="assets/img/new1.png" alt="new image" class="new__img">
 
-        <!--=============== MAIN JS ===============-->
-        <script src=""></script>
-    </body>
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Hoodie & Sweatshirt
+                            </h2>
+                            <span class="new__subtitle">
+                                Winter collection
+                            </span>
+                        </div>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="new__card">
+                    <img src="assets/img/new2.png" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Pants & Jackets
+                            </h2>
+                            <span class="new__subtitle">
+                                Winter collection
+                            </span>
+                        </div>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="new__card">
+                    <img src="assets/img/new3.png" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Coats & Coat Sets
+                            </h2>
+                            <span class="new__subtitle">
+                                Winter collection
+                            </span>
+                        </div>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== COLLECTION ====================-->
+        <section class="collection section" id="collection">
+
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section" id="products">
+
+        </section>
+
+        <!--==================== BRANDS ====================-->
+        <section class="brand section">
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
