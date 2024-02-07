@@ -28,9 +28,45 @@ let swiperProducts = new Swiper(".products__container", {
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+    
+const scrollActive = () =>{
+  	const scrollDown = window.scrollY
+
+	sections.forEach(current =>{
+		const sectionHeight = current.offsetHeight,
+			  sectionTop = current.offsetTop - 58,
+			  sectionId = current.getAttribute('id'),
+			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+			sectionsClass.classList.add('active-link')
+		}else{
+			sectionsClass.classList.remove('active-link')
+		}                                                    
+	})
+}
+window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
-
-/*=============== DARK LIGHT THEME ===============*/
-
+const scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay:400
+  //reset: true
+})
+
+sr.reveal(`.home__data, .products__container, .footer__container, .footer__info, .section__title`)
+sr.reveal(`.home__images`,{delay: 600, origin:'bottom'})
+sr.reveal(`.new__card, .brand__img`,{interval: 100})
+sr.reveal(`.collection__explore:nth-child(1)`,{origin:'right'})
+sr.reveal(`.collection__explore:nth-child(2)`,{origin:'left'})
