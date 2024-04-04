@@ -23,4 +23,8 @@ Este projeto está sob uma licença de uso livre. Sinta-se à vontade para explo
 
 ---
 
-Criado com ❤️ pela equipe da Loja de Crochê Artesanal. Para mais informações ou dúvidas, acesse nosso site e entre em contato.
+# Autor 🖊️
+Guilherme Baltazar Vericimo de Sales
+
+<a href="https://www.linkedin.com/in/guilherme-baltazar-0028361a1" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+<a href="https://instagram.com/yguilhermeb" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
